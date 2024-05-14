@@ -40,7 +40,7 @@ except subprocess.CalledProcessError:
 os.system("clear")
 def ma_ip():
     url='https://worker-cold-smoke-492c.bubblesemoji.workers.dev'
-    get_ip= requests.get(url,proxies=dict(http='socks5://127.0.0.1:443',https='socks5://127.0.0.1:443'))
+    get_ip= requests.get(url,proxies=dict(http='socks5://127.0.0.1:9050',https='socks5://127.0.0.1:9050'))
     return get_ip.text
 
 def change():
